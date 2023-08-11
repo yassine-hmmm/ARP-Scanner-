@@ -4,7 +4,7 @@ import pyfiglet
 import colorama
 
 
-
+# Function based approach
 def get_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument("-v","--verbose", help='increase output verbosity', action="store_true")
@@ -18,6 +18,7 @@ def scan(ip):
     results = scapy.srp(frame, timeout=1, verbose=False)[0]
     return  results
 
+# Class based approach 
 
 def scan_summary(results):
     colorama.init()
