@@ -18,7 +18,7 @@ def scan(ip):
     results = scapy.srp(frame, timeout=1, verbose=False)[0]
     return  results
 
-# Class based approach 
+
 
 def scan_summary(results):
     colorama.init()
@@ -37,7 +37,7 @@ def scan_summary(results):
         print(red + '-' * 60)
         counter+=1
 
-
+# Class based approach 
 class Scanner:
 
 
